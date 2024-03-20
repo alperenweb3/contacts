@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Address Book</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="header">
+        <a href="https://codeworks.me" target="_blank">
+          <img src="https://codeworks.me/wp-content/uploads/2019/07/logo-horizontal-orange.svg" alt="CodeWorks.me Logo" id="logo">
+        </a>
+          
+        <h1>CodeWorks.me Coding Challenge</h1>
+    </div>
+    <div id="app">
+        <input type="text" id="searchBar" placeholder="Search contacts...">
+        <div id="contacts"></div>
+        <button id="showAddContactModal">Add Contact</button>
+
+        <!-- The Modal -->
+        <div id="addContactModal" class="modal">
+            <!-- Modal content -->
+            <div class="modal-content">
+                <span class="close">&times;</span>
+                <h2>Add Contact</h2>
+                <input type="text" id="name" placeholder="Name" required>
+                <input type="text" id="surname" placeholder="Surname" required>
+                <input type="text" id="phoneNumber" placeholder="Phone Number" required>
+                <input type="text" id="address" placeholder="Address" required>
+                <button id="addContact">Add</button>
+            </div>
+        </div>
+        <div id="noContactsNotification" style="display:none; padding: 10px 0px;">No contacts available. Please add a new contact.</div>
+        <div id="noSearchResultsNotification" style="display:none; padding: 10px 0px;">No search results found.</div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Application Script -->
+    <script src="script.js"></script>
+</body>
+</html>
