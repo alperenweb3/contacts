@@ -25,8 +25,10 @@ $(document).ready(function() {
       // Toggle search result notification
       if (visibleContacts === 0 && value !== "") {
           $('#noSearchResultsNotification').show();
+          $('#showAddContactModal').hide();
       } else {
           $('#noSearchResultsNotification').hide();
+          $('#showAddContactModal').show();
       }
   });
 
