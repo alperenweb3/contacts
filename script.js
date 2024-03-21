@@ -78,11 +78,4 @@ $(document).ready(function() {
       // Check after deleting a contact
       toggleSearchAndNotification();
   });
-
-  $('#searchBar').on('keyup', function() {
-      const value = $(this).val().toLowerCase();
-      $('.contact').filter(function() {
-          $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
-      });
-  });
 });
